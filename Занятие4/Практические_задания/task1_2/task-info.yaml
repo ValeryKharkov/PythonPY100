@@ -1,0 +1,26 @@
+type: theory
+files:
+- name: main.py
+  visible: true
+  placeholders:
+  - offset: 48
+    length: 52
+    placeholder_text: '[i ** 2 for i in range(n)])  # TODO добавить условие'
+    initial_state:
+      length: 52
+      offset: 48
+    initialized_from_dependency: false
+    selected: false
+    status: Unchecked
+    encrypted_possible_answer: '[i ** 2 for i in range(n) if i % 2 == 0])'
+  text: |
+    if __name__ == "__main__":
+        n = 10
+        print([i ** 2 for i in range(n)])  # TODO добавить условие
+  learner_created: false
+- name: __init__.py
+  visible: false
+  learner_created: false
+status: Unchecked
+record: -1
+post_submission_on_open: true

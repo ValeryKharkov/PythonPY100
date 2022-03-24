@@ -1,0 +1,37 @@
+type: theory
+files:
+- name: main.py
+  visible: true
+  placeholders:
+  - offset: 343
+    length: 36
+    placeholder_text: '...  # TODO вызвать функцию add_func'
+    initial_state:
+      length: 36
+      offset: 343
+    initialized_from_dependency: false
+    selected: false
+    status: Unchecked
+    encrypted_possible_answer: add_func(5, 10)
+  text: |
+    # Пусть функция принимает два числа, складывает их и возвращает результат
+    def add_func(a, b):
+        # a и b аргументы, которые принимает функция
+        # эти аргументы будут не доступны вне тела функции
+        add = a + b
+
+        # чтобы вернуть результат нужно использовать ключевое слово return
+        return add
+
+
+    if __name__ == "__main__":
+        result = ...  # TODO вызвать функцию add_func
+
+        print(result)
+  learner_created: false
+- name: __init__.py
+  visible: false
+  learner_created: false
+status: Unchecked
+record: -1
+post_submission_on_open: true

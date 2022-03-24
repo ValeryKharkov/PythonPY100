@@ -1,0 +1,44 @@
+type: output
+files:
+- name: tests/output.txt
+  visible: false
+  text: |
+    {0: 0, 1: 1, 2: 4, 3: 9, 4: 16, 5: 25, 6: 36, 7: 49, 8: 64, 9: 81}
+    {0: 0, 1: 1, 2: 4, 3: 9, 4: 16, 5: 25, 6: 36, 7: 49, 8: 64, 9: 81}
+  learner_created: false
+- name: main.py
+  visible: true
+  placeholders:
+  - offset: 244
+    length: 41
+    placeholder_text: '{...}  # TODO записать dict comprehension'
+    initial_state:
+      length: 41
+      offset: 244
+    initialized_from_dependency: false
+    selected: false
+    status: Unchecked
+    encrypted_possible_answer: '{i: i ** 2 for i in range(n)}'
+  text: |
+    def dict_over_for_loop(n: int) -> dict:
+        dict_ = {}
+        for i in range(n):
+            dict_[i] = i ** 2  # присвоение словарю нового значения по несуществующему ранее ключу
+
+        return dict_
+
+
+    def dict_comprehension(n: int) -> dict:
+        return {...}  # TODO записать dict comprehension
+
+
+    if __name__ == "__main__":
+        number = 10
+        print(dict_over_for_loop(number))
+        print(dict_comprehension(number))
+  learner_created: false
+- name: __init__.py
+  visible: false
+  learner_created: false
+status: Unchecked
+record: -1

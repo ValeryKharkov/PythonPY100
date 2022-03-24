@@ -1,0 +1,47 @@
+type: theory
+files:
+- name: main.py
+  visible: true
+  placeholders:
+  - offset: 0
+    length: 53
+    placeholder_text: '# TODO написать функцию для поиска количества месяцев'
+    initial_state:
+      length: 53
+      offset: 0
+    initialized_from_dependency: false
+    selected: false
+    status: Unchecked
+    encrypted_possible_answer: |-
+      def alive(money_capital, salary, spend, increase=0.05):
+          month = 0
+          while money_capital >= spend:
+              month += 1
+              money_capital -= spend
+              spend *= 1 + increase
+              money_capital += salary
+
+          return month
+  - offset: 87
+    length: 57
+    placeholder_text: '...  # TODO вызвать функцию и проверить работоспособность'
+    initial_state:
+      length: 57
+      offset: 87
+    initialized_from_dependency: false
+    selected: false
+    status: Unchecked
+    encrypted_possible_answer: print(alive(10000, 5000, 6000))
+  text: |
+    # TODO написать функцию для поиска количества месяцев
+
+
+    if __name__ == "__main__":
+        ...  # TODO вызвать функцию и проверить работоспособность
+  learner_created: false
+- name: __init__.py
+  visible: false
+  learner_created: false
+status: Unchecked
+record: -1
+post_submission_on_open: true

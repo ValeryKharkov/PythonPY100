@@ -1,0 +1,31 @@
+type: output
+files:
+- name: tests/output.txt
+  visible: false
+  text: |
+    [1, 2, 3, 3, 2, 1]
+  learner_created: false
+- name: main.py
+  visible: true
+  placeholders:
+  - offset: 39
+    length: 25
+    placeholder_text: '# TODO сложить два списка'
+    initial_state:
+      length: 25
+      offset: 39
+    initialized_from_dependency: false
+    selected: false
+    status: Unchecked
+    encrypted_possible_answer: print(list_1 + list_2)
+  text: |
+    list_1 = [1, 2, 3]
+    list_2 = [3, 2, 1]
+
+    # TODO сложить два списка
+  learner_created: false
+- name: __init__.py
+  visible: false
+  learner_created: false
+status: Unchecked
+record: -1

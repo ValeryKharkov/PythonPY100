@@ -1,0 +1,52 @@
+type: theory
+files:
+- name: tests/output.txt
+  visible: false
+  text: |
+    1 2 3
+    4 5 6
+    7 8 9
+  learner_created: false
+- name: main.py
+  visible: true
+  placeholders:
+  - offset: 170
+    length: 43
+    placeholder_text: '...:  # TODO Как получить количество строк?'
+    initial_state:
+      length: 43
+      offset: 170
+    initialized_from_dependency: false
+    selected: false
+    status: Unchecked
+    encrypted_possible_answer: 'range(len(matrix)):'
+  - offset: 239
+    length: 46
+    placeholder_text: '...:  # TODO как получить количество столбцов?'
+    initial_state:
+      length: 46
+      offset: 239
+    initialized_from_dependency: false
+    selected: false
+    status: Unchecked
+    encrypted_possible_answer: 'range(len(matrix[row_index])):'
+  text: |
+    if __name__ == "__main__":
+        # матрица или таблица это список строк,
+        matrix = [
+            [1, 2, 3],
+            [4, 5, 6],
+            [7, 8, 9]
+        ]
+
+        for row_index in ...:  # TODO Как получить количество строк?
+            for col_index in ...:  # TODO как получить количество столбцов?
+                print(matrix[row_index][col_index], end=" ")
+            print()
+  learner_created: false
+- name: __init__.py
+  visible: false
+  learner_created: false
+status: Unchecked
+record: -1
+post_submission_on_open: true

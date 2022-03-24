@@ -1,0 +1,51 @@
+type: output
+files:
+- name: tests/output.txt
+  visible: false
+  text: |
+    False
+    True
+  learner_created: false
+- name: main.py
+  visible: true
+  placeholders:
+  - offset: 37
+    length: 67
+    placeholder_text: '...  # TODO не забыть проерить, что число дожно быть четырехзначное'
+    initial_state:
+      length: 67
+      offset: 37
+    initialized_from_dependency: false
+    selected: false
+    status: Unchecked
+    encrypted_possible_answer: |-
+      if len(str(num)) != 4:
+              raise ValueError("Число не четырехзначное :( ")
+  - offset: 110
+    length: 42
+    placeholder_text: '...  # TODO проверить кратность суммы цифр'
+    initial_state:
+      length: 42
+      offset: 110
+    initialized_from_dependency: false
+    selected: false
+    status: Unchecked
+    encrypted_possible_answer: |-
+      list_digits = [int(digit) for digit in str(num)]
+          return True if sum(list_digits) % 7 == 0 else False
+  text: |
+    def digit_sum(num: int) -> bool:
+        ...  # TODO не забыть проерить, что число дожно быть четырехзначное
+
+        ...  # TODO проверить кратность суммы цифр
+
+
+    if __name__ == "__main__":
+        print(digit_sum(1234))
+        print(digit_sum(7777))
+  learner_created: false
+- name: __init__.py
+  visible: false
+  learner_created: false
+status: Unchecked
+record: -1

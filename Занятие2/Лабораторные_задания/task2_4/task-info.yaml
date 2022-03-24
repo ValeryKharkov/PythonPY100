@@ -1,0 +1,56 @@
+type: output
+files:
+- name: tests/output.txt
+  visible: false
+  text: |2
+          H
+           e
+            l
+             l
+              o
+               ,
+                w
+                 o
+                  r
+                   l
+                    d
+  learner_created: false
+- name: main.py
+  visible: true
+  placeholders:
+  - offset: 75
+    length: 40
+    placeholder_text: '...  # TODO чему равно начальное смещение?'
+    initial_state:
+      length: 42
+      offset: 75
+    initialized_from_dependency: false
+    selected: false
+    status: Solved
+    encrypted_possible_answer: 5
+  - offset: 120
+    length: 63
+    placeholder_text: '# TODO как использовать начальное смещение в команде enumerate?'
+    initial_state:
+      length: 63
+      offset: 122
+    initialized_from_dependency: false
+    selected: false
+    status: Solved
+    encrypted_possible_answer: |-
+      for offset, char in enumerate(phrase, start=initial_offset):
+              print(" " * offset, char)
+  text: |
+    if __name__ == "__main__":
+        phrase = "Hello,world"
+        initial_offset = ...  # TODO чему равно начальное смещение?
+        # TODO как использовать начальное смещение в команде enumerate?
+  learner_created: false
+- name: __init__.py
+  visible: false
+  learner_created: false
+status: Solved
+feedback:
+  message: Congratulations!
+  time: Thu, 24 Mar 2022 17:29:06 UTC
+record: -1

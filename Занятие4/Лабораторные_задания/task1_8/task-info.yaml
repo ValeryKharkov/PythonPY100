@@ -1,0 +1,39 @@
+type: output
+files:
+- name: tests/output.txt
+  visible: false
+  text: |
+    [64, 0, 1000, 0, 27, 0, 0, 512, 216, 729]
+  learner_created: false
+- name: main.py
+  visible: true
+  placeholders:
+  - offset: 0
+    length: 59
+    placeholder_text: |-
+      def task():  # TODO записать решение в виде функции
+          ...
+    initial_state:
+      length: 59
+      offset: 0
+    initialized_from_dependency: false
+    selected: false
+    status: Unchecked
+    encrypted_possible_answer: |-
+      def task(src_list: list) -> list:
+          return [i ** 3 if i > 0 else 0 for i in src_list]
+  text: |
+    def task():  # TODO записать решение в виде функции
+        ...
+
+
+    if __name__ == "__main__":
+        list_ = [4, -1, 10, -1, 3, -3, -6, 8, 6, 9]
+        new_list = task(list_)
+        print(new_list)
+  learner_created: false
+- name: __init__.py
+  visible: false
+  learner_created: false
+status: Unchecked
+record: -1

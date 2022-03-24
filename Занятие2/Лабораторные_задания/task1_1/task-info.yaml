@@ -1,0 +1,33 @@
+type: theory
+files:
+- name: main.py
+  visible: true
+  placeholders:
+  - offset: 0
+    length: 71
+    placeholder_text: '# TODO'
+    initial_state:
+      length: 6
+      offset: 0
+    initialized_from_dependency: false
+    selected: true
+    status: Solved
+    encrypted_possible_answer: |-
+      a = int(input("Введите число "))
+
+      result = a % 2 == 0 or a % 3 == 0
+      if result:
+          print("Число кратно 2 или 3")
+      else:
+          print("Число не кратно 2 или 3")
+  text: |
+    # TODO
+  learner_created: false
+- name: __init__.py
+  visible: false
+  learner_created: false
+status: Solved
+feedback:
+  time: Thu, 24 Mar 2022 17:35:20 UTC
+record: -1
+post_submission_on_open: true

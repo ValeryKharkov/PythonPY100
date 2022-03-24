@@ -1,0 +1,38 @@
+type: output
+files:
+- name: tests/output.txt
+  visible: false
+  text: |
+    False
+    True
+  learner_created: false
+- name: main.py
+  visible: true
+  placeholders:
+  - offset: 32
+    length: 74
+    placeholder_text: '...  # TODO какая есть отличительная особенность, при повторяющихся
+      числах'
+    initial_state:
+      length: 74
+      offset: 32
+    initialized_from_dependency: false
+    selected: false
+    status: Unchecked
+    encrypted_possible_answer: |-
+      list_digits = [int(digit) for digit in str(num)]
+          return False if len(set(list_digits)) == len(list_digits) else True
+  text: |
+    def task(num: int) -> bool:
+        ...  # TODO какая есть отличительная особенность, при повторяющихся числах
+
+
+    if __name__ == "__main__":
+        print(task(123))
+        print(task(1111111))
+  learner_created: false
+- name: __init__.py
+  visible: false
+  learner_created: false
+status: Unchecked
+record: -1

@@ -1,0 +1,54 @@
+type: output
+files:
+- name: tests/output.txt
+  visible: false
+  text: |
+    Не входят цифры (4 и 8) или цифра 9
+    Входят цифры (4 и 8) или цифра 9
+    Входят цифры (4 и 8) или цифра 9
+    Не входят цифры (4 и 8) или цифра 9
+  learner_created: false
+- name: main.py
+  visible: true
+  placeholders:
+  - offset: 24
+    length: 36
+    placeholder_text: '...  # TODO сформировать список цифр'
+    initial_state:
+      length: 36
+      offset: 24
+    initialized_from_dependency: false
+    selected: false
+    status: Unchecked
+    encrypted_possible_answer: list_digits = [int(digit) for digit in str(num)]
+  - offset: 69
+    length: 29
+    placeholder_text: '...:  # TODO записать условие'
+    initial_state:
+      length: 29
+      offset: 69
+    initialized_from_dependency: false
+    selected: false
+    status: Unchecked
+    encrypted_possible_answer: '(4 in list_digits and 7 in list_digits) or 9 in list_digits:'
+  text: |
+    def task(num: int):
+        ...  # TODO сформировать список цифр
+
+        if ...:  # TODO записать условие
+            print("Входят цифры (4 и 8) или цифра 9")
+        else:
+            print("Не входят цифры (4 и 8) или цифра 9")
+
+
+    if __name__ == "__main__":
+        task(1234)
+        task(12345678)
+        task(1235679)
+        task(0)
+  learner_created: false
+- name: __init__.py
+  visible: false
+  learner_created: false
+status: Unchecked
+record: -1

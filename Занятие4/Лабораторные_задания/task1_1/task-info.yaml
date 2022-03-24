@@ -1,0 +1,47 @@
+type: output
+files:
+- name: tests/output.txt
+  visible: false
+  text: |
+    [100, 121, 144, 169, 196, 225, 256, 289, 324, 361, 400]
+  learner_created: false
+- name: main.py
+  visible: true
+  placeholders:
+  - offset: 0
+    length: 59
+    placeholder_text: 'def task(n, m):  # TODO записать функцию с аннотацией типов'
+    initial_state:
+      length: 59
+      offset: 0
+    initialized_from_dependency: false
+    selected: false
+    status: Unchecked
+    encrypted_possible_answer: 'def task(n: int, m: int) -> list:'
+  - offset: 64
+    length: 67
+    placeholder_text: '...  # TODO с помощью list comprehension найти квадраты целых
+      чисел'
+    initial_state:
+      length: 67
+      offset: 64
+    initialized_from_dependency: false
+    selected: false
+    status: Unchecked
+    encrypted_possible_answer: return [num ** 2 for num in range(n, m+1)]
+  text: |
+    def task(n, m):  # TODO записать функцию с аннотацией типов
+        ...  # TODO с помощью list comprehension найти квадраты целых чисел
+
+
+    if __name__ == "__main__":
+        number_n = 10
+        number_m = 20
+
+        print(task(number_n, number_m))
+  learner_created: false
+- name: __init__.py
+  visible: false
+  learner_created: false
+status: Unchecked
+record: -1

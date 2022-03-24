@@ -1,0 +1,86 @@
+type: output
+files:
+- name: tests/output.txt
+  visible: false
+  text: |
+    1 Иванов
+    2 Васильев
+    3 Петров
+    4 Смирнов
+    5 Михайлов
+    6 Фёдоров
+    7 Соколов
+    8 Яковлев
+    9 Попов
+    10 Андреев
+    11 Алексеев
+    12 Александров
+    13 Лебедев
+    14 Григорьев
+    15 Степанов
+    16 Семёнов
+    17 Павлов
+    18 Богданов
+    19 Николаев
+    20 Дмитриев
+    21 Егоров
+    22 Волков
+    23 Кузнецов
+    24 Никитин
+    25 Соловьёв
+  learner_created: false
+- name: __init__.py
+  visible: false
+  learner_created: false
+- name: main.py
+  visible: true
+  placeholders:
+  - offset: 576
+    length: 118
+    placeholder_text: '# TODO распечатать фамилии и их номера'
+    initial_state:
+      length: 38
+      offset: 576
+    initialized_from_dependency: false
+    selected: true
+    status: Solved
+    encrypted_possible_answer: |-
+      for index, surname in enumerate(surname_list, start=1):
+              print(index, surname)
+  text: |
+    if __name__ == "__main__":
+        surname_list = [  # список фамилий Санкт-Петербурга
+            "Иванов",
+            "Васильев",
+            "Петров",
+            "Смирнов",
+            "Михайлов",
+            "Фёдоров",
+            "Соколов",
+            "Яковлев",
+            "Попов",
+            "Андреев",
+            "Алексеев",
+            "Александров",
+            "Лебедев",
+            "Григорьев",
+            "Степанов",
+            "Семёнов",
+            "Павлов",
+            "Богданов",
+            "Николаев",
+            "Дмитриев",
+            "Егоров",
+            "Волков",
+            "Кузнецов",
+            "Никитин",
+            "Соловьёв"
+        ]
+
+        # TODO распечатать фамилии и их номера
+  learner_created: false
+status: Solved
+feedback:
+  message: Congratulations!
+  time: Thu, 24 Mar 2022 17:22:44 UTC
+record: -1

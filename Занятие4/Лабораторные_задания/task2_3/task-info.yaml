@@ -1,0 +1,51 @@
+type: output
+files:
+- name: tests/output.txt
+  visible: false
+  text: |
+    False
+    True
+    False
+    True
+  learner_created: false
+- name: main.py
+  visible: true
+  placeholders:
+  - offset: 0
+    length: 47
+    placeholder_text: 'def task(num):  # TODO добавить аннотацию типов'
+    initial_state:
+      length: 47
+      offset: 0
+    initialized_from_dependency: false
+    selected: false
+    status: Unchecked
+    encrypted_possible_answer: 'def task(num: int) -> bool:'
+  - offset: 52
+    length: 61
+    placeholder_text: '...  # TODO найти сумму цифр числа и понять двузначная ли она'
+    initial_state:
+      length: 61
+      offset: 52
+    initialized_from_dependency: false
+    selected: false
+    status: Unchecked
+    encrypted_possible_answer: |-
+      list_digits = [int(digit) for digit in str(abs(num))]
+          return True if 10 <= sum(list_digits) <= 99 else False
+  text: |
+    def task(num):  # TODO добавить аннотацию типов
+        ...  # TODO найти сумму цифр числа и понять двузначная ли она
+
+
+    if __name__ == "__main__":
+        print(task(12))
+        print(task(555))
+        print(task(-12))
+        print(task(-149))
+  learner_created: false
+- name: __init__.py
+  visible: false
+  learner_created: false
+status: Unchecked
+record: -1

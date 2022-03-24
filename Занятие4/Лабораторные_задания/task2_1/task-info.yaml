@@ -1,0 +1,112 @@
+type: output
+files:
+- name: tests/output.txt
+  visible: false
+  text: |
+    [1, 2, 3, 4, 5, 6, 7, 8, 9]
+    45
+    20
+    9
+    1
+    [1, 3, 5, 7, 9]
+    -8
+  learner_created: false
+- name: main.py
+  visible: true
+  placeholders:
+  - offset: 69
+    length: 67
+    placeholder_text: '...  # TODO c помощью list comprehension получить список цифр
+      числа'
+    initial_state:
+      length: 67
+      offset: 69
+    initialized_from_dependency: false
+    selected: false
+    status: Unchecked
+    encrypted_possible_answer: '[int(digit) for digit in str(number)]'
+  - offset: 171
+    length: 35
+    placeholder_text: '...)  # TODO найти сумму цифр числа'
+    initial_state:
+      length: 35
+      offset: 171
+    initialized_from_dependency: false
+    selected: false
+    status: Unchecked
+    encrypted_possible_answer: sum(list_digits))
+  - offset: 218
+    length: 42
+    placeholder_text: '...)  # TODO найти сумму всех четных чисел'
+    initial_state:
+      length: 42
+      offset: 218
+    initialized_from_dependency: false
+    selected: false
+    status: Unchecked
+    encrypted_possible_answer: sum([even_digit for even_digit in list_digits if even_digit
+      % 2 == 0]))
+  - offset: 272
+    length: 34
+    placeholder_text: '...)  # TODO найти количество цифр'
+    initial_state:
+      length: 34
+      offset: 272
+    initialized_from_dependency: false
+    selected: false
+    status: Unchecked
+    encrypted_possible_answer: len(list_digits))
+  - offset: 318
+    length: 36
+    placeholder_text: '...)  # TODO найти минимальную цифру'
+    initial_state:
+      length: 36
+      offset: 318
+    initialized_from_dependency: false
+    selected: false
+    status: Unchecked
+    encrypted_possible_answer: min(list_digits))
+  - offset: 366
+    length: 49
+    placeholder_text: '...)  # TODO все цифры стоящие на нечетных местах'
+    initial_state:
+      length: 49
+      offset: 366
+    initialized_from_dependency: false
+    selected: false
+    status: Unchecked
+    encrypted_possible_answer: list_digits[::2])
+  - offset: 427
+    length: 59
+    placeholder_text: '...)  # TODO найти разность между первой и последней цифрой'
+    initial_state:
+      length: 59
+      offset: 427
+    initialized_from_dependency: false
+    selected: false
+    status: Unchecked
+    encrypted_possible_answer: list_digits[0] - list_digits[-1])
+  text: |
+    if __name__ == "__main__":
+        number = 123456789
+
+        list_digits = ...  # TODO c помощью list comprehension получить список цифр числа
+        print(list_digits)
+
+        print(...)  # TODO найти сумму цифр числа
+
+        print(...)  # TODO найти сумму всех четных чисел
+
+        print(...)  # TODO найти количество цифр
+
+        print(...)  # TODO найти минимальную цифру
+
+        print(...)  # TODO все цифры стоящие на нечетных местах
+
+        print(...)  # TODO найти разность между первой и последней цифрой
+  learner_created: false
+- name: __init__.py
+  visible: false
+  learner_created: false
+status: Unchecked
+record: -1

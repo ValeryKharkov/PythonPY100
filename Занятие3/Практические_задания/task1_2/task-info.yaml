@@ -1,0 +1,23 @@
+type: theory
+files:
+- name: main.py
+  visible: true
+  text: |
+    def pow_func(base, pow_=2):
+        print(base, "**", pow_)
+        return base ** pow_
+
+
+    if __name__ == "__main__":
+        print(pow_func(4))  # по умолчанию возводим число в степень два
+        print(pow_func(3, pow_=3))  # переопределяем аргумент по умолчанию
+
+        print(pow_func(2, 5))  # используем позиционные аргументы
+        print(pow_func(pow_=2, base=8))  # используем позиционные аргументы
+  learner_created: false
+- name: __init__.py
+  visible: false
+  learner_created: false
+status: Unchecked
+record: -1
+post_submission_on_open: true

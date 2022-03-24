@@ -1,0 +1,55 @@
+type: output
+files:
+- name: tests/output.txt
+  visible: false
+  text: |
+    True
+    True
+    False
+    False
+  learner_created: false
+- name: main.py
+  visible: true
+  placeholders:
+  - offset: 43
+    length: 44
+    placeholder_text: '...  # TODO проверить что число шестизначное'
+    initial_state:
+      length: 44
+      offset: 43
+    initialized_from_dependency: false
+    selected: false
+    status: Unchecked
+    encrypted_possible_answer: |-
+      if len(str(num)) != 6:
+              raise ValueError("Число не шестизначное :(")
+  - offset: 93
+    length: 46
+    placeholder_text: '...  # TODO проверить счастливое число или нет'
+    initial_state:
+      length: 46
+      offset: 93
+    initialized_from_dependency: false
+    selected: false
+    status: Unchecked
+    encrypted_possible_answer: |-
+      list_digits = [int(digit) for digit in str(num)]
+          return True if sum(list_digits[:3]) == sum(list_digits[3:]) else False
+  text: |
+    def is_lucky_number(num: int) -> bool:
+        ...  # TODO проверить что число шестизначное
+
+        ...  # TODO проверить счастливое число или нет
+
+
+    if __name__ == "__main__":
+        print(is_lucky_number(123321))
+        print(is_lucky_number(111111))
+        print(is_lucky_number(123456))
+        print(is_lucky_number(456243))
+  learner_created: false
+- name: __init__.py
+  visible: false
+  learner_created: false
+status: Unchecked
+record: -1

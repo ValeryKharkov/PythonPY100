@@ -1,0 +1,45 @@
+type: theory
+files:
+- name: main.py
+  visible: true
+  placeholders:
+  - offset: 0
+    length: 58
+    placeholder_text: '# TODO написать функцию для поиска необходимой суммы денег'
+    initial_state:
+      length: 58
+      offset: 0
+    initialized_from_dependency: false
+    selected: false
+    status: Unchecked
+    encrypted_possible_answer: |-
+      def alive(salary, spend, months=10, increase=0.03):
+          need_money = 0
+          for _ in range(months):
+              need_money += spend - salary
+              spend *= 1 + increase
+
+          return need_money
+  - offset: 92
+    length: 57
+    placeholder_text: '...  # TODO вызвать функцию и проверить работоспособность'
+    initial_state:
+      length: 57
+      offset: 92
+    initialized_from_dependency: false
+    selected: false
+    status: Unchecked
+    encrypted_possible_answer: print(alive(5000, 6000))
+  text: |
+    # TODO написать функцию для поиска необходимой суммы денег
+
+
+    if __name__ == "__main__":
+        ...  # TODO вызвать функцию и проверить работоспособность
+  learner_created: false
+- name: __init__.py
+  visible: false
+  learner_created: false
+status: Unchecked
+record: -1
+post_submission_on_open: true

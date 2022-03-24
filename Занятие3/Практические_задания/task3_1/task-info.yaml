@@ -1,0 +1,60 @@
+type: theory
+files:
+- name: main.py
+  visible: true
+  placeholders:
+  - offset: 46
+    length: 40
+    placeholder_text: '...  # TODO разделить строку по пробелам'
+    initial_state:
+      length: 40
+      offset: 46
+    initialized_from_dependency: false
+    selected: false
+    status: Unchecked
+    encrypted_possible_answer: str_.split(" ")
+  - offset: 155
+    length: 50
+    placeholder_text: '# TODO поместить в результирующий список все слова'
+    initial_state:
+      length: 50
+      offset: 155
+    initialized_from_dependency: false
+    selected: false
+    status: Unchecked
+    encrypted_possible_answer: |-
+      for word in words_list:
+              if word:
+                  words_list_without_empty_string.append(word)
+  - offset: 261
+    length: 42
+    placeholder_text: '...  # TODO соединить список слов в строку'
+    initial_state:
+      length: 42
+      offset: 261
+    initialized_from_dependency: false
+    selected: false
+    status: Unchecked
+    encrypted_possible_answer: '" ".join(words_list_without_empty_string)'
+  text: |
+    def remove_whitespace(str_):
+        words_list = ...  # TODO разделить строку по пробелам
+        print(words_list)
+
+        words_list_without_empty_string = []
+        # TODO поместить в результирующий список все слова
+        print(words_list_without_empty_string)
+
+        return ...  # TODO соединить список слов в строку
+
+
+    if __name__ == "__main__":
+        str_with_space = "    123.    test   print test11    "  # исходная строка
+        print(remove_whitespace(str_with_space))
+  learner_created: false
+- name: __init__.py
+  visible: false
+  learner_created: false
+status: Unchecked
+record: -1
+post_submission_on_open: true

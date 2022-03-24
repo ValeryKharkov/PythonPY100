@@ -1,0 +1,39 @@
+type: theory
+files:
+- name: main.py
+  visible: true
+  placeholders:
+  - offset: 25
+    length: 67
+    placeholder_text: '...  # TODO выберите нужный цикл, чтобы получать числа с клавиатуры'
+    initial_state:
+      length: 67
+      offset: 25
+    initialized_from_dependency: false
+    selected: false
+    status: Unchecked
+    encrypted_possible_answer: |-
+      numbers_list = []
+          while True:
+              number = int(input("Введите число: "))
+              if 3 <= number <= 13:
+                  numbers_list.append(number)
+              if number < 0:
+                  break
+
+          return numbers_list
+  text: |
+    def input_numbers():
+        ...  # TODO выберите нужный цикл, чтобы получать числа с клавиатуры
+
+
+    if __name__ == "__main__":
+        numbers = input_numbers()
+        print(numbers)
+  learner_created: false
+- name: __init__.py
+  visible: false
+  learner_created: false
+status: Unchecked
+record: -1
+post_submission_on_open: true

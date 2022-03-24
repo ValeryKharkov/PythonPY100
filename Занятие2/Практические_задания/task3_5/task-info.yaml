@@ -1,0 +1,39 @@
+type: theory
+files:
+- name: main.py
+  visible: true
+  placeholders:
+  - offset: 219
+    length: 143
+    placeholder_text: '# TODO добавить блок else и выдавать пользователю любое предупреждение
+      о том, что месяц указан неверно'
+    initial_state:
+      length: 102
+      offset: 197
+    initialized_from_dependency: false
+    selected: true
+    status: Solved
+    encrypted_possible_answer: |-
+      else:
+          print("Такого месяца не существует :(")
+  text: |
+    mount = int(input())
+
+    if mount in [3, 4, 5]:
+        print("Весна")
+    elif mount in [6, 7, 8]:
+        print("Лето")
+    elif mount in (9, 10, 11):
+        print("Осень")
+    elif mount in {12, 1, 2}:
+        print("Зима")
+    # TODO добавить блок else и выдавать пользователю любое предупреждение о том, что месяц указан неверно
+  learner_created: false
+- name: __init__.py
+  visible: false
+  learner_created: false
+status: Solved
+feedback:
+  time: Thu, 24 Mar 2022 16:02:11 UTC
+record: -1
+post_submission_on_open: true

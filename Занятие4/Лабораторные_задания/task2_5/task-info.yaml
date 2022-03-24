@@ -1,0 +1,49 @@
+type: output
+files:
+- name: tests/output.txt
+  visible: false
+  text: |
+    False
+    True
+  learner_created: false
+- name: main.py
+  visible: true
+  placeholders:
+  - offset: 48
+    length: 53
+    placeholder_text: '...  # TODO проверить что число больше или равно нулю'
+    initial_state:
+      length: 53
+      offset: 48
+    initialized_from_dependency: false
+    selected: false
+    status: Unchecked
+    encrypted_possible_answer: |-
+      if num < 0:
+              raise ValueError("Число должно быть неотрицательным")
+  - offset: 107
+    length: 49
+    placeholder_text: '...  # TODO проверить является ли число палиндром'
+    initial_state:
+      length: 49
+      offset: 107
+    initialized_from_dependency: false
+    selected: false
+    status: Unchecked
+    encrypted_possible_answer: return True if str(num) == str(num)[::-1] else False
+  text: |
+    def is_palindrome_number(num: int) -> bool:
+        ...  # TODO проверить что число больше или равно нулю
+
+        ...  # TODO проверить является ли число палиндром
+
+
+    if __name__ == "__main__":
+        print(is_palindrome_number(1234))
+        print(is_palindrome_number(1234321))
+  learner_created: false
+- name: __init__.py
+  visible: false
+  learner_created: false
+status: Unchecked
+record: -1

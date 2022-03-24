@@ -1,0 +1,43 @@
+type: output
+files:
+- name: main.py
+  visible: true
+  placeholders:
+  - offset: 132
+    length: 72
+    placeholder_text: '# TODO  найти количество чисел сумма квадратов, которых не
+      превышает 500'
+    initial_state:
+      length: 72
+      offset: 132
+    initialized_from_dependency: false
+    selected: false
+    status: Unchecked
+    encrypted_possible_answer: |-
+      while True:
+              current_value = n ** 2
+              if current_sum + current_value >= max_sum:
+                  break
+
+              current_sum = current_sum + current_value
+              n += 1
+
+          return n, current_sum
+  text: |
+    def main():
+        n = 1  # первое натуральное число
+        current_sum = 0  # текущая сумма
+        max_sum = 500  # максимальная сумма
+
+        # TODO  найти количество чисел сумма квадратов, которых не превышает 500
+
+
+    if __name__ == "__main__":
+        count_numbers, sum_ = main()
+        print(count_numbers, sum_)
+  learner_created: false
+- name: __init__.py
+  visible: false
+  learner_created: false
+status: Unchecked
+record: -1

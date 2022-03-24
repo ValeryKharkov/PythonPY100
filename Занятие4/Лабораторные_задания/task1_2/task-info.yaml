@@ -1,0 +1,46 @@
+type: output
+files:
+- name: tests/output.txt
+  visible: false
+  text: |
+    [25, 49, 81, 121, 169, 225, 289, 361, 441, 529, 625, 729, 841, 961, 1089, 1225, 1369]
+  learner_created: false
+- name: main.py
+  visible: true
+  placeholders:
+  - offset: 0
+    length: 47
+    placeholder_text: 'def task(n, m):  # TODO указать аннотацию типов'
+    initial_state:
+      length: 47
+      offset: 0
+    initialized_from_dependency: false
+    selected: false
+    status: Unchecked
+    encrypted_possible_answer: 'def task(n: int, m: int) -> list:'
+  - offset: 52
+    length: 64
+    placeholder_text: '...  # TODO с помощью list comprehension отфильтровать знаечения'
+    initial_state:
+      length: 64
+      offset: 52
+    initialized_from_dependency: false
+    selected: false
+    status: Unchecked
+    encrypted_possible_answer: return [num ** 2 for num in range(n, m+1) if num %
+      2 == 1]
+  text: |
+    def task(n, m):  # TODO указать аннотацию типов
+        ...  # TODO с помощью list comprehension отфильтровать знаечения
+
+
+    if __name__ == "__main__":
+        number_n = 5
+        number_m = 37
+        print(task(5, 37))
+  learner_created: false
+- name: __init__.py
+  visible: false
+  learner_created: false
+status: Unchecked
+record: -1

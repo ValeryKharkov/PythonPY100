@@ -1,0 +1,44 @@
+type: output
+files:
+- name: tests/output.txt
+  visible: false
+  text: |
+    [6, 7, 8, 9, 10]
+  learner_created: false
+- name: main.py
+  visible: true
+  placeholders:
+  - offset: 44
+    length: 47
+    placeholder_text: '...  # TODO найти среднее арифметическое списка'
+    initial_state:
+      length: 47
+      offset: 44
+    initialized_from_dependency: false
+    selected: false
+    status: Unchecked
+    encrypted_possible_answer: mean = sum(list_numbers) / len(list_numbers)
+  - offset: 96
+    length: 61
+    placeholder_text: '...  # TODO с помощью list comprehension вернуть новый список'
+    initial_state:
+      length: 61
+      offset: 96
+    initialized_from_dependency: false
+    selected: false
+    status: Unchecked
+    encrypted_possible_answer: return [num for num in list_numbers if num > mean]
+  text: |
+    def more_than_mean(list_numbers: list):
+        ...  # TODO найти среднее арифметическое списка
+        ...  # TODO с помощью list comprehension вернуть новый список
+
+
+    if __name__ == "__main__":
+        print(more_than_mean([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]))
+  learner_created: false
+- name: __init__.py
+  visible: false
+  learner_created: false
+status: Unchecked
+record: -1

@@ -1,0 +1,61 @@
+type: theory
+files:
+- name: main.py
+  visible: true
+  placeholders:
+  - offset: 79
+    length: 55
+    placeholder_text: '...  # TODO получить два списка четных и нечетных чисел'
+    initial_state:
+      length: 55
+      offset: 79
+    initialized_from_dependency: false
+    selected: false
+    status: Unchecked
+    encrypted_possible_answer: |-
+      list_even = [num for num in list_ if num % 2 == 0]
+          list_odd = [num for num in list_ if num % 2 == 1]
+  - offset: 140
+    length: 36
+    placeholder_text: '...  # TODO найти длины этих списков'
+    initial_state:
+      length: 36
+      offset: 140
+    initialized_from_dependency: false
+    selected: false
+    status: Unchecked
+    encrypted_possible_answer: |-
+      len_even = len(list_even)
+          len_odd = len(list_odd)
+  - offset: 182
+    length: 77
+    placeholder_text: '...  # TODO распечатать каких чисел больше. Учтите, что длины
+      могу быть равны'
+    initial_state:
+      length: 77
+      offset: 182
+    initialized_from_dependency: false
+    selected: false
+    status: Unchecked
+    encrypted_possible_answer: |-
+      if len_odd > len_even:
+              print("Нечетные")
+          elif len_odd < len_even:
+              print("Четные")
+          else:
+              print("Одинаково")
+  text: |
+    if __name__ == "__main__":
+        list_ = [4, -1, 10, -1, 3, -3, -6, 8, 6, 9]
+        ...  # TODO получить два списка четных и нечетных чисел
+
+        ...  # TODO найти длины этих списков
+
+        ...  # TODO распечатать каких чисел больше. Учтите, что длины могу быть равны
+  learner_created: false
+- name: __init__.py
+  visible: false
+  learner_created: false
+status: Unchecked
+record: -1
+post_submission_on_open: true

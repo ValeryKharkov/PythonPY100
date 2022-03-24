@@ -1,0 +1,77 @@
+type: theory
+files:
+- name: main.py
+  visible: true
+  placeholders:
+  - offset: 8
+    length: 106
+    placeholder_text: '...  # TODO запросить месяц у пользователя. Номер месяца -
+      целочисленное значение!'
+    initial_state:
+      length: 82
+      offset: 8
+    initialized_from_dependency: false
+    selected: false
+    status: Solved
+    encrypted_possible_answer: int(input())
+  - offset: 119
+    length: 63
+    placeholder_text: '...:  # TODO записать условие через операторы or'
+    initial_state:
+      length: 48
+      offset: 95
+    initialized_from_dependency: false
+    selected: false
+    status: Solved
+    encrypted_possible_answer: 'mount == 3 or mount == 4 or mount == 5:'
+  - offset: 216
+    length: 67
+    placeholder_text: '...:  # TODO проверить вхождение месяца в список месяцев лета'
+    initial_state:
+      length: 61
+      offset: 177
+    initialized_from_dependency: false
+    selected: false
+    status: Solved
+    encrypted_possible_answer: '[6, 7, 8]:'
+  - offset: 316
+    length: 70
+    placeholder_text: '...:  # TODO проверить вхождение месяца в кортеж месяцев осени'
+    initial_state:
+      length: 62
+      offset: 271
+    initialized_from_dependency: false
+    selected: false
+    status: Solved
+    encrypted_possible_answer: '(9, 10, 11):'
+  - offset: 420
+    length: 71
+    placeholder_text: '...:  # TODO проверить вхождение месяца в множество месяцев
+      лета'
+    initial_state:
+      length: 64
+      offset: 367
+    initialized_from_dependency: false
+    selected: false
+    status: Solved
+    encrypted_possible_answer: '{12, 1, 2}:'
+  text: |
+    mount = ...  # TODO запросить месяц у пользователя. Номер месяца - целочисленное значение!
+
+    if ...:  # TODO записать условие через операторы or
+        print("Весна")
+    elif mount in ...:  # TODO проверить вхождение месяца в список месяцев лета
+        print("Лето")
+    elif mount in ...:  # TODO проверить вхождение месяца в кортеж месяцев осени
+        print("Осень")
+    elif mount in ...:  # TODO проверить вхождение месяца в множество месяцев лета
+        print("Зима")
+  learner_created: false
+- name: __init__.py
+  visible: false
+  learner_created: false
+status: Solved
+feedback:
+  time: Thu, 24 Mar 2022 15:58:18 UTC
+record: -1
+post_submission_on_open: true
