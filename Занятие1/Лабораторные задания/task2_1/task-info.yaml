@@ -23,7 +23,7 @@ files:
       offset: 83
     initialized_from_dependency: false
     selected: false
-    status: Unchecked
+    status: Failed
     encrypted_possible_answer: |-
       print(sum(tuple_))
       print(len(tuple_))
@@ -35,5 +35,15 @@ files:
 
     # TODO Каждое из значений печатать на отдельной строке
   learner_created: false
-status: Unchecked
+status: Failed
+feedback:
+  message: Incorrect
+  time: Wed, 30 Mar 2022 18:27:48 UTC
+  expected: |
+    -6
+    20
+    -0.3
+    -10
+    10
+  actual: <no output>
 record: -1

@@ -3,15 +3,15 @@ files:
 - name: main.py
   visible: true
   placeholders:
-  - offset: 0
-    length: 6
+  - offset: 84
+    length: 91
     placeholder_text: '# TODO'
     initial_state:
       length: 6
       offset: 0
     initialized_from_dependency: false
-    selected: false
-    status: Unchecked
+    selected: true
+    status: Solved
     encrypted_possible_answer: |-
       a = int(input('Введите число '))
       b = int(input('Введите число '))
@@ -31,6 +31,8 @@ files:
 - name: __init__.py
   visible: false
   learner_created: false
-status: Unchecked
+status: Solved
+feedback:
+  time: Wed, 30 Mar 2022 19:32:08 UTC
 record: -1
 post_submission_on_open: true

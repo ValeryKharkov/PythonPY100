@@ -9,14 +9,14 @@ files:
   visible: true
   placeholders:
   - offset: 110
-    length: 12
+    length: 19
     placeholder_text: '...)  # TODO'
     initial_state:
       length: 12
       offset: 110
     initialized_from_dependency: false
     selected: false
-    status: Unchecked
+    status: Solved
     encrypted_possible_answer: min(list_))
   text: |
     if __name__ == "__main__":
@@ -26,5 +26,8 @@ files:
 - name: __init__.py
   visible: false
   learner_created: false
-status: Unchecked
+status: Solved
+feedback:
+  message: Congratulations!
+  time: Wed, 30 Mar 2022 18:51:53 UTC
 record: -1

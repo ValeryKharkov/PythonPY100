@@ -10,7 +10,7 @@ files:
   visible: true
   placeholders:
   - offset: 208
-    length: 202
+    length: 218
     placeholder_text: |-
       # TODO заменить на enumerate
           for i in range(len(list_)):
@@ -22,8 +22,8 @@ files:
       length: 202
       offset: 208
     initialized_from_dependency: false
-    selected: false
-    status: Unchecked
+    selected: true
+    status: Failed
     encrypted_possible_answer: |-
       for i, current_value in enumerate(list_):
               if current_value <= min_value:
@@ -46,5 +46,10 @@ files:
 
         print("Минимальный элемент =", min_value, "находится по индексу", min_value_index)
   learner_created: false
-status: Unchecked
+status: Failed
+feedback:
+  message: Incorrect
+  time: Wed, 30 Mar 2022 18:50:43 UTC
+  actual: |
+    Минимальный элемент = -1 находится по индексу 6
 record: -1
