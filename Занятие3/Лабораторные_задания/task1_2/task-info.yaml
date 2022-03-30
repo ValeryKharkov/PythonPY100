@@ -10,7 +10,7 @@ files:
       length: 39
       offset: 0
     initialized_from_dependency: false
-    selected: false
+    selected: true
     status: Unchecked
     encrypted_possible_answer: |-
       def factorial(n):
@@ -19,7 +19,7 @@ files:
               result *= num
 
           return result
-  - offset: 73
+  - offset: 204
     length: 68
     placeholder_text: '# TODO распечатать результат выполнения функции factorial от
       числа 5'
@@ -41,4 +41,8 @@ files:
   visible: false
   learner_created: false
 status: Unchecked
+feedback:
+  message: Failed to launch checking. For more information, see <a href="https://plugins.jetbrains.com/plugin/10081-edutools/docs/troubleshooting-guide.html#failed_to_launch_checking">the
+    Troubleshooting guide</a>
+  time: Thu, 31 Mar 2022 17:16:34 UTC
 record: -1

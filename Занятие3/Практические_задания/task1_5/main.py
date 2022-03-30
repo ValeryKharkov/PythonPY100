@@ -1,7 +1,7 @@
 def counter():
-    count = count + 1
+    count_local = count + 1
 
-    return count
+    return count_local
 
 
 if __name__ == "__main__":

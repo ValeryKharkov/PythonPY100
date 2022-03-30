@@ -33,5 +33,5 @@ def correct_main():
 
 
 if __name__ == "__main__":
-    incorrect_main()
+    # incorrect_main()
     correct_main()
