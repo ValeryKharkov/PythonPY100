@@ -11,7 +11,7 @@ files:
       offset: 0
     initialized_from_dependency: false
     selected: false
-    status: Unchecked
+    status: Solved
     encrypted_possible_answer: |-
       def alive(money_capital, salary, spend, increase=0.05):
           month = 0
@@ -30,7 +30,7 @@ files:
       offset: 87
     initialized_from_dependency: false
     selected: false
-    status: Unchecked
+    status: Solved
     encrypted_possible_answer: print(alive(10000, 5000, 6000))
   text: |
     # TODO написать функцию для поиска количества месяцев
@@ -42,6 +42,6 @@ files:
 - name: __init__.py
   visible: false
   learner_created: false
-status: Unchecked
+status: Solved
 record: -1
 post_submission_on_open: true

@@ -16,7 +16,7 @@ files:
       length: 41
       offset: 40
     initialized_from_dependency: false
-    selected: false
+    selected: true
     status: Unchecked
     encrypted_possible_answer: |-
       words_list_without_empty_string = []

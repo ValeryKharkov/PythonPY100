@@ -11,7 +11,7 @@ files:
       offset: 0
     initialized_from_dependency: false
     selected: false
-    status: Unchecked
+    status: Solved
     encrypted_possible_answer: |-
       def alive(salary, spend, months=10, increase=0.03):
           need_money = 0
@@ -28,7 +28,7 @@ files:
       offset: 92
     initialized_from_dependency: false
     selected: false
-    status: Unchecked
+    status: Solved
     encrypted_possible_answer: print(alive(5000, 6000))
   text: |
     # TODO написать функцию для поиска необходимой суммы денег
@@ -40,6 +40,6 @@ files:
 - name: __init__.py
   visible: false
   learner_created: false
-status: Unchecked
+status: Solved
 record: -1
 post_submission_on_open: true

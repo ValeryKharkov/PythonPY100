@@ -22,7 +22,7 @@ files:
       length: 54
       offset: 83
     initialized_from_dependency: false
-    selected: false
+    selected: true
     status: Failed
     encrypted_possible_answer: |-
       print(sum(tuple_))

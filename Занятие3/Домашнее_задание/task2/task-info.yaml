@@ -11,16 +11,16 @@ files:
 - name: main.py
   visible: true
   placeholders:
-  - offset: 28
-    length: 62
+  - offset: 24
+    length: 0
     placeholder_text: '...  # TODO проверить что в строку входят только символы 1
       и 0'
     initial_state:
       length: 62
       offset: 28
     initialized_from_dependency: false
-    selected: false
-    status: Unchecked
+    selected: true
+    status: Solved
     encrypted_possible_answer: |-
       if not str_:
               return False
@@ -44,5 +44,8 @@ files:
 - name: __init__.py
   visible: false
   learner_created: false
-status: Unchecked
+status: Solved
+feedback:
+  message: Congratulations!
+  time: Wed, 06 Apr 2022 20:23:39 UTC
 record: -1

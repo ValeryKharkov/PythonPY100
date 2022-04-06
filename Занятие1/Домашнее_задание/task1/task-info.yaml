@@ -4,7 +4,7 @@ files:
   visible: true
   placeholders:
   - offset: 155
-    length: 112
+    length: 165
     placeholder_text: |-
       # TODO рассчитайте размер и стоимость файла
       file_size = ...  # размер файла
@@ -13,7 +13,7 @@ files:
       length: 112
       offset: 155
     initialized_from_dependency: false
-    selected: false
+    selected: true
     status: Unchecked
     encrypted_possible_answer: |-
       speed_in_mb_in_sec = speed / (1024 * 1024)
@@ -38,4 +38,8 @@ files:
   visible: false
   learner_created: false
 status: Unchecked
+feedback:
+  message: Failed to launch checking. For more information, see <a href="https://plugins.jetbrains.com/plugin/10081-edutools/docs/troubleshooting-guide.html#failed_to_launch_checking">the
+    Troubleshooting guide</a>
+  time: Wed, 06 Apr 2022 18:03:37 UTC
 record: -1

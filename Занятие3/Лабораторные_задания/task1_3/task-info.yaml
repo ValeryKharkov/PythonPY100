@@ -4,7 +4,7 @@ files:
   visible: true
   placeholders:
   - offset: 42
-    length: 47
+    length: 44
     placeholder_text: '...  # TODO найти список делителей числа number'
     initial_state:
       length: 47
@@ -34,5 +34,5 @@ status: Unchecked
 feedback:
   message: Failed to launch checking. For more information, see <a href="https://plugins.jetbrains.com/plugin/10081-edutools/docs/troubleshooting-guide.html#failed_to_launch_checking">the
     Troubleshooting guide</a>
-  time: Thu, 31 Mar 2022 17:22:53 UTC
+  time: Wed, 06 Apr 2022 19:52:33 UTC
 record: -1
