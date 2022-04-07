@@ -9,7 +9,7 @@ files:
   visible: true
   placeholders:
   - offset: 0
-    length: 59
+    length: 122
     placeholder_text: |-
       def task():  # TODO записать решение в виде функции
           ...
@@ -17,8 +17,8 @@ files:
       length: 59
       offset: 0
     initialized_from_dependency: false
-    selected: false
-    status: Unchecked
+    selected: true
+    status: Solved
     encrypted_possible_answer: |-
       def task(src_list: list) -> list:
           return [i ** 3 if i > 0 else 0 for i in src_list]
@@ -35,5 +35,8 @@ files:
 - name: __init__.py
   visible: false
   learner_created: false
-status: Unchecked
+status: Solved
+feedback:
+  message: Congratulations!
+  time: Thu, 07 Apr 2022 17:33:01 UTC
 record: -1

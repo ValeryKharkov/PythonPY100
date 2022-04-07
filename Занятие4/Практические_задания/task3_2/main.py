@@ -8,4 +8,5 @@ if __name__ == "__main__":
     for fruit in cart:
         print(cart[fruit])  # получаем значение по ключу
 
-    # TODO посчитать через метод values
+    # посчитать через метод values
+    print(sum(cart.values()))

@@ -9,24 +9,24 @@ files:
   visible: true
   placeholders:
   - offset: 44
-    length: 47
+    length: 92
     placeholder_text: '...  # TODO найти среднее арифметическое списка'
     initial_state:
       length: 47
       offset: 44
     initialized_from_dependency: false
-    selected: false
-    status: Unchecked
+    selected: true
+    status: Solved
     encrypted_possible_answer: mean = sum(list_numbers) / len(list_numbers)
-  - offset: 96
-    length: 61
+  - offset: 141
+    length: 105
     placeholder_text: '...  # TODO с помощью list comprehension вернуть новый список'
     initial_state:
       length: 61
       offset: 96
     initialized_from_dependency: false
-    selected: false
-    status: Unchecked
+    selected: true
+    status: Solved
     encrypted_possible_answer: return [num for num in list_numbers if num > mean]
   text: |
     def more_than_mean(list_numbers: list):
@@ -40,5 +40,8 @@ files:
 - name: __init__.py
   visible: false
   learner_created: false
-status: Unchecked
+status: Solved
+feedback:
+  message: Congratulations!
+  time: Thu, 07 Apr 2022 16:52:44 UTC
 record: -1

@@ -4,14 +4,14 @@ files:
   visible: true
   placeholders:
   - offset: 152
-    length: 38
+    length: 57
     placeholder_text: '[]  # TODO записать list comprehension'
     initial_state:
       length: 38
       offset: 152
     initialized_from_dependency: false
-    selected: false
-    status: Unchecked
+    selected: true
+    status: Solved
     encrypted_possible_answer: '[i ** 2 for i in range(n)]'
   text: |
     def list_over_for_loop(n):
@@ -34,6 +34,8 @@ files:
 - name: __init__.py
   visible: false
   learner_created: false
-status: Unchecked
+status: Solved
+feedback:
+  time: Thu, 07 Apr 2022 15:20:27 UTC
 record: -1
 post_submission_on_open: true

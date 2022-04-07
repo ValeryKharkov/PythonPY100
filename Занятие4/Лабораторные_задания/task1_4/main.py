@@ -1,6 +1,6 @@
 def more_than_mean(list_numbers: list):
-    ...  # TODO найти среднее арифметическое списка
-    ...  # TODO с помощью list comprehension вернуть новый список
+    average_value = sum(list_numbers) / len(list_numbers)  # найти среднее арифметическое списка
+    return [i for i in list_numbers if i > average_value] # с помощью list comprehension вернуть новый список
 
 
 if __name__ == "__main__":

@@ -12,24 +12,24 @@ files:
   visible: true
   placeholders:
   - offset: 0
-    length: 47
+    length: 55
     placeholder_text: 'def task(num):  # TODO добавить аннотацию типов'
     initial_state:
       length: 47
       offset: 0
     initialized_from_dependency: false
-    selected: false
-    status: Unchecked
+    selected: true
+    status: Failed
     encrypted_possible_answer: 'def task(num: int) -> bool:'
-  - offset: 52
-    length: 61
+  - offset: 75
+    length: 95
     placeholder_text: '...  # TODO найти сумму цифр числа и понять двузначная ли она'
     initial_state:
       length: 61
       offset: 52
     initialized_from_dependency: false
-    selected: false
-    status: Unchecked
+    selected: true
+    status: Failed
     encrypted_possible_answer: |-
       list_digits = [int(digit) for digit in str(abs(num))]
           return True if 10 <= sum(list_digits) <= 99 else False
@@ -47,5 +47,18 @@ files:
 - name: __init__.py
   visible: false
   learner_created: false
-status: Unchecked
+status: Failed
+feedback:
+  message: Incorrect
+  time: Thu, 07 Apr 2022 18:28:55 UTC
+  expected: |
+    False
+    True
+    False
+    True
+  actual: |
+    True
+    False
+    True
+    False
 record: -1

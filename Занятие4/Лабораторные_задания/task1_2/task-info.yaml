@@ -9,24 +9,24 @@ files:
   visible: true
   placeholders:
   - offset: 0
-    length: 47
+    length: 60
     placeholder_text: 'def task(n, m):  # TODO указать аннотацию типов'
     initial_state:
       length: 47
       offset: 0
     initialized_from_dependency: false
-    selected: false
-    status: Unchecked
+    selected: true
+    status: Solved
     encrypted_possible_answer: 'def task(n: int, m: int) -> list:'
-  - offset: 52
-    length: 64
+  - offset: 65
+    length: 110
     placeholder_text: '...  # TODO с помощью list comprehension отфильтровать знаечения'
     initial_state:
       length: 64
       offset: 52
     initialized_from_dependency: false
-    selected: false
-    status: Unchecked
+    selected: true
+    status: Solved
     encrypted_possible_answer: return [num ** 2 for num in range(n, m+1) if num %
       2 == 1]
   text: |
@@ -42,5 +42,8 @@ files:
 - name: __init__.py
   visible: false
   learner_created: false
-status: Unchecked
+status: Solved
+feedback:
+  message: Congratulations!
+  time: Thu, 07 Apr 2022 16:42:06 UTC
 record: -1

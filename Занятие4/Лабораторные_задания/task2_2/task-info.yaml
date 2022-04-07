@@ -12,24 +12,24 @@ files:
   visible: true
   placeholders:
   - offset: 24
-    length: 36
+    length: 70
     placeholder_text: '...  # TODO сформировать список цифр'
     initial_state:
       length: 36
       offset: 24
     initialized_from_dependency: false
-    selected: false
-    status: Unchecked
+    selected: true
+    status: Solved
     encrypted_possible_answer: list_digits = [int(digit) for digit in str(num)]
-  - offset: 69
-    length: 29
+  - offset: 103
+    length: 62
     placeholder_text: '...:  # TODO записать условие'
     initial_state:
       length: 29
       offset: 69
     initialized_from_dependency: false
-    selected: false
-    status: Unchecked
+    selected: true
+    status: Solved
     encrypted_possible_answer: '(4 in list_digits and 7 in list_digits) or 9 in list_digits:'
   text: |
     def task(num: int):
@@ -50,5 +50,8 @@ files:
 - name: __init__.py
   visible: false
   learner_created: false
-status: Unchecked
+status: Solved
+feedback:
+  message: Congratulations!
+  time: Thu, 07 Apr 2022 18:14:57 UTC
 record: -1

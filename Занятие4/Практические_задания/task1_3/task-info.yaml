@@ -4,14 +4,14 @@ files:
   visible: true
   placeholders:
   - offset: 39
-    length: 30
+    length: 52
     placeholder_text: '[i for i in range(10)]  # TODO'
     initial_state:
       length: 30
       offset: 39
     initialized_from_dependency: false
-    selected: false
-    status: Unchecked
+    selected: true
+    status: Solved
     encrypted_possible_answer: '[i ** 2 if i % 2 == 0 else -i for i in range(10)]'
   text: |
     if __name__ == "__main__":
@@ -20,6 +20,6 @@ files:
 - name: __init__.py
   visible: false
   learner_created: false
-status: Unchecked
+status: Solved
 record: -1
 post_submission_on_open: true
